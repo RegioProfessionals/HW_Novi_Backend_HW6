@@ -1,7 +1,7 @@
 //    import:
 
 //    name and sort of class:
-public class Pet  {
+class Pet extends Person {
 //    name and type of variables:
     String name;
     int age;
@@ -11,6 +11,7 @@ public class Pet  {
 //    constructor(s):
 
     public Pet(int age, String name, String species) {
+        super(owner);
         this.age = age;
         this.name = name;
         this.species = species;

@@ -1,18 +1,19 @@
 //    import:
+import java.util.ArrayList;
 
 //    name and sort of class:
 public class Person {
 //    name and type of variables:
-    String name;
-    String middleName;
-    String lastName;
-    String sex;
-    int age;
-    Person mother;
-    Person father;
-    String[] children;
-    String[] siblings;
-    String[] pets;
+    private String name;
+    private String middleName;
+    private String lastName;
+    private String sex;
+    private int age;
+    private Person mother;
+    private Person father;
+    private ArrayList<String> children;
+    private ArrayList<String> siblings;
+    private ArrayList<String> pets;
 
 
 //    constructor(s):
@@ -76,7 +77,8 @@ public class Person {
 
 //    method(s):
     static void addParents() {
-
+        Person parent1 = new Person("Henk", "De Vries", 34, "male" );
+        Person parent2 = new Person("Ingrid", "De Wit", 28, "female");
     }
     static void addChild() {
 
